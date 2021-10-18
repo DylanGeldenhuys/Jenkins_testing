@@ -1,27 +1,21 @@
-pipline {
-    
+Jenkinsfile (Declarative Pipeline)
+pipeline {
     agent any
-    
+
     stages {
-    
-        stage("build") {
-        
+        stage('Build') {
             steps {
-                echo "build the application.."
+                echo 'Building..'
             }
         }
-        
-        stage("test") {
-        
+        stage('Test') {
             steps {
-                echo "test the application..."
+                echo 'Testing..'
             }
         }
-        
-        stage("deploy") {
-        
+        stage('Deploy') {
             steps {
-                echo "deploy the application..."
+                echo 'Deploying....'
             }
         }
     }
